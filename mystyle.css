@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#cf89e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 320px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 15px;
+    border: 3px solid black;
+
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    width: 100%;
+    height: 60px;
+    font-size: 25px;
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color:black;
+    color:white;
+    font-size: 30px;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.button.operator {
+    background-color: #ff9f00;
+    color: white;
+}
+
+.button.equals {
+    background-color: #4caf50;
+    color: white;
+    grid-column: span 2;
+}
+
+.button.clear {
+    background-color: #f44336;
+    color: white;
+}
+
+.button.zero {
+    grid-column: span 2;
+}
+marquee{
+    /* border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border: 2px solid black; */
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button1 {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    background-color: #ea0d0d;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.button2 {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    background-color: #cf89e3;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s;
+}
